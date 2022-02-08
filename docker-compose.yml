@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  noetic-dev:
+    container_name: 'noetic-dev'
+    hostname: 'noetic-dev'
+    image: 'radar/noetic:develop'
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      network: host
+    ports:
+      - "8888:8888"
+      - "8808:8808/udp"
+    volumes:
+      - .:/root/radar
+    tty: true
+    working_dir: /root/
