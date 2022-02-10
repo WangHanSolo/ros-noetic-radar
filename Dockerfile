@@ -1,4 +1,6 @@
 FROM nvidia/cuda:10.2-runtime-ubuntu18.04
+# FROM nvcr.io/nvidia/l4t-base:r32.6.1
+
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt update; apt install -y curl gnupg2 lsb-core vim git tmux
 
