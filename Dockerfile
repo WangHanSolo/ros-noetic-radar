@@ -11,5 +11,8 @@ RUN apt update
 RUN apt install -y ros-melodic-ros-base
 RUN apt install -y python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
 RUN apt install -y python-rosdep
+
+RUN apt install -y ros-melodic-pcl-ros ros-melodic-serial
+
 RUN rosdep init
 RUN rosdep update

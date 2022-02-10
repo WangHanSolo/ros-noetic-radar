@@ -1,9 +1,9 @@
 version: "3.9"
 services:
-  noetic-dev:
-    container_name: 'noetic-dev'
-    hostname: 'noetic-dev'
-    image: 'radar/noetic:develop'
+  radar-dev:
+    container_name: 'radar-dev'
+    hostname: 'radar-dev'
+    image: 'radar/melodic:develop'
     build:
       context: ./
       dockerfile: Dockerfile
